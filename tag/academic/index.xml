@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academic</title>
+    <link>/tag/academic/</link>
+      <atom:link href="/tag/academic/index.xml" rel="self" type="application/rss+xml" />
+    <description>Academic</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 04 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Academic</title>
+      <link>/tag/academic/</link>
+    </image>
+    
+    <item>
+      <title>Draw wheat chart in R</title>
+      <link>/post/draw-wheat-chart-in-r/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/draw-wheat-chart-in-r/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/wheatplots.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;前几天，在微信公众号里看到有个R包（gganatogram) 可以画动物和植物的图形，但是里面的小麦不好看。于是把我用R画的小麦分享出来，比一比哪个更好看😜。&lt;/p&gt;
+&lt;p&gt;话不多说，先上图。
+&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/img1.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;先说说为什么要画这么一个图。&lt;/p&gt;
+&lt;p&gt;那是在我刚进课题组的时候，就了解到实验室有大量小麦的数据。而且是从叶片到茎秆再到穗和籽粒，一应俱全。更让人惊喜的是这些数据时间跨度大。当时我就在想，用什么样的方式才能展示出来这么丰富的空间和时间变化呢？&lt;/p&gt;
+&lt;p&gt;一次偶然的机会，我联想到地图，地图里面的各个区域由多边形组成，区域的数值变化可以通过填色来完成。眼尖的同学应该看出来了，里面正是我华北平原的吴桥实验站（手动笑脸）。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/img2.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;而我们一株小麦上的各个器官正好对应着地图上不同区域。利用小麦不同器官的轮廓图，勾勒出多边形，再把多边形组合，就形成一株完整的小麦。&lt;/p&gt;
+&lt;p&gt;有了这个想法之后，我就开始实施。首先从网上找到一株小麦的矢量图（就是各器官能分开的图形），然后根据各部分的轮廓创建多边形。是的，图形数据化用到了一款开源软件，明为&lt;a href=&#34;https://automeris.io/WebPlotDigitizer/&#34;&gt;WebPlotDigitizer&lt;/a&gt;。这款软件非常强大，可以提取图像或者图片中的坐标数据。这里特别提一句，小麦植株的比例做了一些微调，可能与真实的有点出入，但是不影响数据展示。还有一点，我们课题组专门研究地上部分的，暂时还没把根加进去，后期会考虑。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/img3.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/img4.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;多边形创建采用了专门处理gis数据的R包sf。&lt;/p&gt;
+&lt;p&gt;最后的成品就是前面看到的这个样子了。每一个部分都可以根据自己的需求填上任意的颜色。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/img5.png&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;最后再来一张动图看看。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/mygif.gif&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;好吧，最后公布一下那个R包里面的小麦。貌似也没那么难看 😄&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/wheatbygganotom.png&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
