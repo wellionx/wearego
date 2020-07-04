@@ -42,5 +42,17 @@
 </description>
     </item>
     
+    <item>
+      <title>Show the local weather</title>
+      <link>/post/show-the-local-weather/</link>
+      <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/show-the-local-weather/</guid>
+      <description>
+
+
+
+</description>
+    </item>
+    
   </channel>
 </rss>
