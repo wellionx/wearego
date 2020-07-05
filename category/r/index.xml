@@ -51,7 +51,15 @@
       <description>
 
 
-
+&lt;p&gt;&lt;strong&gt;最近降雨似乎比往年多了很多，突然觉得有必要记录一下降雨的数据&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;下面就是从中国气象数据网获得的逐小时数据分析顺义降雨情况。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;数据是从6月19号开始收集的，先展示一下小时的降水&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;C&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-07-04-show-the-local-weather.en_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;降雨集中的几个小时，数据挤在一起就不好看清楚了。于是进一步算了一下日降水量。并且我们还关注最近7天累计的降水有多少。所以用折线加散点的方式展示了近7天的累计降水。最后可以看出，近7日的累计降水达到11.5 mm&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-07-04-show-the-local-weather.en_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;
+&lt;strong&gt;再看下海淀区的情况，最近降水比顺义多好多，近7日总降水达到100mm&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-07-04-show-the-local-weather.en_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
