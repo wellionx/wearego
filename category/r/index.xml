@@ -35,8 +35,10 @@
 &lt;p&gt;多边形创建采用了专门处理gis数据的R包sf。&lt;/p&gt;
 &lt;p&gt;最后的成品就是前面看到的这个样子了。每一个部分都可以根据自己的需求填上任意的颜色。而且颜色也可以根据需求自己选择，颜色的深浅代表指标的高低。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/img5.png&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;最后再来一张动图看看。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;
+也可以给每个部分添加标签，放上对应的数据。这样看起来好是不是好很多。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;再来一张动图看看。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/mygif.gif&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;好吧，最后公布一下那个R包里面的小麦。貌似也没那么难看 😄&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2020-07-04-draw-wheat-chart-in-r.en_files/wheatbygganotom.png&#34; /&gt;&lt;/p&gt;
