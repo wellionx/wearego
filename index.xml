@@ -35,6 +35,82 @@
     </item>
     
     <item>
+      <title>Add font to a photo</title>
+      <link>/post/add-font-to-a-photo/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/add-font-to-a-photo/</guid>
+      <description>
+
+
+&lt;p&gt;在正式写推文之前，又发现了一个坑——Markdown的图片路径不支持中文。所以推文的名字不能用中文，因为推文内部的图片都是用推文名字索引的(尴尬)。&lt;/p&gt;
+&lt;p&gt;首先看下成果吧。
+(原图做了压缩才push上来的)
+&lt;img src=&#34;/post/2020-07-09-add-font-to-a-photo.en_files/leftrighthand.jpg&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;在Y叔公众号看到一篇文章(&lt;a href=&#34;https://mp.weixin.qq.com/s/pnU3CH2T0FISCnsxeUQgQg&#34;&gt;用R给高考学生送祝福吧&lt;/a&gt;)，图片中添加文字，用R可以实现。觉得很有意思，于是测试了一下，竟然翻车了。所以将这个过程记录下来，以便有机会用上这个功能。&lt;/p&gt;
+&lt;p&gt;实现这个功能用的的R包并不复杂，只有&lt;code&gt;showtext&lt;/code&gt;、&lt;code&gt;ggplot2&lt;/code&gt;和&lt;code&gt;ggimage&lt;/code&gt;三个。&lt;code&gt;showtext&lt;/code&gt;用来显示个性化的字体(如本例用的maocao), &lt;code&gt;ggplot2&lt;/code&gt;用来画图，&lt;code&gt;ggimage&lt;/code&gt;用来添加图片背景。&lt;/p&gt;
+&lt;p&gt;一开始加载字体就出现了问题，基于某些特殊原因，未能直接访问google，所以字体只能下载后本地加载。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(showtext)
+font_add(&amp;quot;maocao&amp;quot;, &amp;quot;D:\\Data\\goupanddownwithR\\LiuJianMaoCao-Regular.ttf&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;下一步按照Y叔的操作，打开&lt;code&gt;showtext&lt;/code&gt;，创建ggplot图像，将文字添加进去，并指定了字体maocao，再讲图片导入，一切都很顺利。&lt;/p&gt;
+&lt;p&gt;然而最终出来的图和Y叔的不一样——字体没有变。&lt;/p&gt;
+&lt;p&gt;于是搜索原因，试了各种方法都没有成功。在stackoverflow上的一个回答引起了我的注意，图形设备竟然还分win和pdf以及png。&lt;/p&gt;
+&lt;p&gt;刚好这时候，查到了邱怡轩(&lt;code&gt;showtext&lt;/code&gt;包的作者)在统计之都上的一篇文章。他用R画图，添加的文字都是用Cairo包开启的png设备。于是我也按照指引尝试了一下，果然奏效。&lt;/p&gt;
+&lt;p&gt;代码如下：&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(Cairo)
+Cairo.capabilities() # 检查Cairo的兼容性
+# 打开图形设备
+CairoPNG(&amp;quot;leftrighthand.jpg&amp;quot;, 2590, 4608);
+showtext_auto()
+
+d = data.frame(x=0:1)
+
+p = ggplot(d, aes(x,x)) + geom_blank() +
+  annotate(&amp;quot;text&amp;quot;, x=.73, y=.91, angle = -10,
+           label=&amp;quot;左手nature\n右手science&amp;quot;,color = &amp;quot;white&amp;quot;,
+           family=&amp;quot;maocao&amp;quot;, size=88) +
+  theme_void()
+
+#指定图片位置
+img &amp;lt;- &amp;#39;D:/Data/左手nature右手science.jpg&amp;#39;
+ggbackground(p, img)
+
+# 停止使用showtext
+showtext_end()
+# 关闭图形设备
+dev.off()&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>挖坑待填</title>
+      <link>/post/%E6%8C%96%E5%9D%91%E5%BE%85%E5%A1%AB/</link>
+      <pubDate>Mon, 06 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/%E6%8C%96%E5%9D%91%E5%BE%85%E5%A1%AB/</guid>
+      <description>
+
+
+&lt;div id=&#34;统计一下挖过的坑&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;统计一下挖过的坑&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;小麦植株地下部，用R画出来&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基本思路与地上部分的画法相同，先找轮廓，然后描摹&lt;/li&gt;
+&lt;li&gt;图形展示还没想好，可能根部的养分测定，按照区域测的会有区别&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;顺便想起是否可以画地下部不同土层的轮廓，基本构思还需要在考虑一下&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;气象数据的可视化&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;附近气象站点&lt;/li&gt;
+&lt;li&gt;气象数据如何获取&lt;/li&gt;
+&lt;li&gt;气象数据的筛选与整理&lt;/li&gt;
+&lt;li&gt;气象数据展示（柱状图展示降雨，折线散点展示温度等）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Draw wheat chart in R</title>
       <link>/post/draw-wheat-chart-in-r/</link>
       <pubDate>Sat, 04 Jul 2020 00:00:00 +0000</pubDate>
