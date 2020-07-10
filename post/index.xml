@@ -22,8 +22,8 @@
 
 &lt;p&gt;在正式写推文之前，又发现了一个坑——Markdown的图片路径不支持中文。所以推文的名字不能用中文，因为推文内部的图片都是用推文名字索引的(尴尬)。&lt;/p&gt;
 &lt;p&gt;首先看下成果吧。
-(原图做了压缩才push上来的)
-&lt;img src=&#34;/post/2020-07-09-add-font-to-a-photo.en_files/leftrighthand.jpg&#34; /&gt;&lt;/p&gt;
+(原图做了压缩才push上来的)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/large/6b84e15bgy1gglu2tb81hj20ee0pm4qp.jpg&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;在Y叔公众号看到一篇文章(&lt;a href=&#34;https://mp.weixin.qq.com/s/pnU3CH2T0FISCnsxeUQgQg&#34;&gt;用R给高考学生送祝福吧&lt;/a&gt;)，图片中添加文字，用R可以实现。觉得很有意思，于是测试了一下，竟然翻车了。所以将这个过程记录下来，以便有机会用上这个功能。&lt;/p&gt;
 &lt;p&gt;实现这个功能用的的R包并不复杂，只有&lt;code&gt;showtext&lt;/code&gt;、&lt;code&gt;ggplot2&lt;/code&gt;和&lt;code&gt;ggimage&lt;/code&gt;三个。&lt;code&gt;showtext&lt;/code&gt;用来显示个性化的字体(如本例用的maocao), &lt;code&gt;ggplot2&lt;/code&gt;用来画图，&lt;code&gt;ggimage&lt;/code&gt;用来添加图片背景。&lt;/p&gt;
 &lt;p&gt;一开始加载字体就出现了问题，基于某些特殊原因，未能直接访问google，所以字体只能下载后本地加载。&lt;/p&gt;
@@ -56,6 +56,9 @@ ggbackground(p, img)
 showtext_end()
 # 关闭图形设备
 dev.off()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;最后做了个小的尝试，为了方便图片在markdown(这篇博客就是用markdown写的)中的引用，将图片上传到了新浪图床。图片上传图床用的&lt;a href=&#34;https://segmentfault.com/a/1190000020251841&#34;&gt;新浪微博图床插件&lt;/a&gt;,在Chrome应用商店可以直接下载。登录微博账号，即可使用。拖拽上传也非常方便。&lt;/p&gt;
+&lt;p&gt;看下图床提供的图片效果，做了一下大小的适配。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tvax4.sinaimg.cn/wap720/6b84e15bgy1ggluf73y45j20ee0pm4qp.jpg&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
