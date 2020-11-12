@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>haploid induction | Academic</title>
+    <link>/tag/haploid-induction/</link>
+      <atom:link href="/tag/haploid-induction/index.xml" rel="self" type="application/rss+xml" />
+    <description>haploid induction</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>haploid induction</title>
+      <link>/tag/haploid-induction/</link>
+    </image>
+    
+    <item>
+      <title>Development of In Vivo Haploid Inducer Lines for Screening Haploid Immature Embryos in Maize</title>
+      <link>/publication/new-haploid-inducer/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/new-haploid-inducer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mutation of ZmDMP enhances haploid induction in maize</title>
+      <link>/publication/cloning-of-zmdmp/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/cloning-of-zmdmp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twin embryo seeds in maize</title>
+      <link>/publication/twin-embryo-in-maize/</link>
+      <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/twin-embryo-in-maize/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
