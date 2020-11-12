@@ -591,7 +591,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    2 min read
   </span>
   
 
@@ -641,19 +641,29 @@
 </ol>
 <p>2.<strong>数据文件不止一个，常常需要批量读取。</strong></p>
 <p>于是经过多次试错与总结，写下了下面的方法批量读取指定行的光谱数据。</p>
-<pre class="r"><code>spec.bdf &lt;- data.frame()
+<pre class="r"><code># get file names of all spectra
+dir = &quot;Spec/&quot;
+files = list.files(path = dir ,recursive = TRUE)
+# read spectra from AB files
+filepath = paste(dir, files, sep = &#39;&#39;)
+# define a dataframe to store spectra data
+spec.bdf &lt;- data.frame()
 
 for (flp in filepath) {
-  
-spec &lt;- read.table(flp, skip = 27, header = F ,stringsAsFactors = F,row.names = 1)
-
+  spec &lt;- read.table(flp, skip = 27, header = F ,
+                     stringsAsFactors = F,row.names = 1)
   spec.t &lt;- as.data.frame(t(spec))
   spec.bdf &lt;- rbind(spec.bdf, spec.t)
-  
 }</code></pre>
 <p>根据需求，有时候要对数据做一下转置。转置后再把所有的数据bind到一起。</p>
 <p>采用<code>ggplot2</code>绘图，需要的是长数据，原来两列的数据正好符合要求，只需要添加一列信息即可。</p>
-<pre class="r"><code>spec.df &lt;- data.frame()
+<pre class="r"><code># get file names of all spectra
+dir = &quot;Spec/&quot;
+files = list.files(path = dir ,recursive = TRUE)
+# read spectra from AB files
+filepath = paste(dir, files, sep = &#39;&#39;)
+# define a dataframe to store spectra data
+spec.bdf &lt;- data.frame()
 
 for (flp in filepath) {
   

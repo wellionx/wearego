@@ -5,12 +5,59 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 24 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Go through the process of GWAS</title>
+      <link>/post/go-through-the-process-of-gwas/</link>
+      <pubDate>Thu, 03 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/go-through-the-process-of-gwas/</guid>
+      <description>
+
+
+&lt;div id=&#34;耗时近一月终于将关联分析流程跑通&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;耗时近一月，终于将关联分析流程跑通&lt;/h2&gt;
+&lt;p&gt;GWAS又名全基因组关联分析，是一种基因定位的方法。该方法基于自然群体和历史重组进行表型和基因型相关性的挖掘，是一种快速开展基因定位的方法。&lt;/p&gt;
+&lt;p&gt;其实从实施过程来讲，关联分析并不复杂。无非就是收集表型性状，结合基因型分型数据，利用软件（如TASSEL）提供的统计分析方法计算与表型显著相关的SNP位点。&lt;/p&gt;
+&lt;p&gt;下面就根据我自己的经历，简单介绍下我做GWAS的一些经验。&lt;/p&gt;
+&lt;div id=&#34;表型&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;1. 表型&lt;/h3&gt;
+&lt;p&gt;对于很多研究来说，表型收集的成本其实非常高。不仅要将大量的自交系种到田间进行测试，还要消耗很多劳动力进行表型采集，这个过程中时间和金钱的消耗都非常大。所以能够采用高通量的方法进行表型收集应该是一大幸事。&lt;/p&gt;
+&lt;div id=&#34;光谱指数&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;1.1 光谱指数&lt;/h4&gt;
+&lt;p&gt;本研究就是采用高光谱仪进行表型数据采集工作，采集到的叶片光谱包含大量关于叶片结构和功能特征的信息。基于前人的研究，构建起多个光谱指数表型性状用于研究叶片功能性状的遗传特征。&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;光谱主成分&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;1.2 光谱主成分&lt;/h4&gt;
+&lt;p&gt;此外，光谱采集到的大部分数据是冗余的，因此将其做了主成分分析，选取前3个主成分作为叶片光学特征性状。依据主成分性状也进行关联分析。&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;基因型&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;2. 基因型&lt;/h3&gt;
+&lt;p&gt;关联分析群体来做国家玉米改良中心杨小红课题组。华中农大严建兵老师课题组在该群体55K芯片基因型的基础上又做了大量基因分型的工作，将总的SNP标记数量增加到125万。本研究采用严老师课题组网站（maizego.org）公布的基因型进行GWAS分析。&lt;/p&gt;
+&lt;div id=&#34;群体结构&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;2.1 群体结构&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linking spectra to genetic diversity</title>
+      <link>/post/linking-spectra-to-genetic-diversity/</link>
+      <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/linking-spectra-to-genetic-diversity/</guid>
+      <description>&lt;p&gt;之前看到的一篇
+&lt;a href=&#34;https://doi.org/10.3732/ajb.1700061&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章&lt;/a&gt;。里面有一张图印象深刻，大意是遗传上有差异的种质，其叶片的光谱必然也存在某种变异。这点和现在正在做的叶片光学特征的遗传解析问题不谋而合。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/mw690/6b84e15bly1gh3ia726kij21dm0i8wjp.jpg&#34; alt=&#34;linking spectra to functional and phylogenetic diversity&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>HSI and its potential for rapid single-kernel analysis</title>
@@ -62,19 +109,29 @@
 &lt;/ol&gt;
 &lt;p&gt;2.&lt;strong&gt;数据文件不止一个，常常需要批量读取。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;于是经过多次试错与总结，写下了下面的方法批量读取指定行的光谱数据。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;spec.bdf &amp;lt;- data.frame()
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# get file names of all spectra
+dir = &amp;quot;Spec/&amp;quot;
+files = list.files(path = dir ,recursive = TRUE)
+# read spectra from AB files
+filepath = paste(dir, files, sep = &amp;#39;&amp;#39;)
+# define a dataframe to store spectra data
+spec.bdf &amp;lt;- data.frame()
 
 for (flp in filepath) {
-  
-spec &amp;lt;- read.table(flp, skip = 27, header = F ,stringsAsFactors = F,row.names = 1)
-
+  spec &amp;lt;- read.table(flp, skip = 27, header = F ,
+                     stringsAsFactors = F,row.names = 1)
   spec.t &amp;lt;- as.data.frame(t(spec))
   spec.bdf &amp;lt;- rbind(spec.bdf, spec.t)
-  
 }&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;根据需求，有时候要对数据做一下转置。转置后再把所有的数据bind到一起。&lt;/p&gt;
 &lt;p&gt;采用&lt;code&gt;ggplot2&lt;/code&gt;绘图，需要的是长数据，原来两列的数据正好符合要求，只需要添加一列信息即可。&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;spec.df &amp;lt;- data.frame()
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# get file names of all spectra
+dir = &amp;quot;Spec/&amp;quot;
+files = list.files(path = dir ,recursive = TRUE)
+# read spectra from AB files
+filepath = paste(dir, files, sep = &amp;#39;&amp;#39;)
+# define a dataframe to store spectra data
+spec.bdf &amp;lt;- data.frame()
 
 for (flp in filepath) {
   
