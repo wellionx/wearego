@@ -5,7 +5,7 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 03 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
       <title>Posts</title>
@@ -53,8 +53,7 @@
       <link>/post/linking-spectra-to-genetic-diversity/</link>
       <pubDate>Sat, 25 Jul 2020 00:00:00 +0000</pubDate>
       <guid>/post/linking-spectra-to-genetic-diversity/</guid>
-      <description>&lt;p&gt;之前看到的一篇
-&lt;a href=&#34;https://doi.org/10.3732/ajb.1700061&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章&lt;/a&gt;。里面有一张图印象深刻，大意是遗传上有差异的种质，其叶片的光谱必然也存在某种变异。这点和现在正在做的叶片光学特征的遗传解析问题不谋而合。&lt;/p&gt;
+      <description>&lt;p&gt;之前看到的一篇&lt;a href=&#34;https://doi.org/10.3732/ajb.1700061&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章&lt;/a&gt;。里面有一张图印象深刻，大意是遗传上有差异的种质，其叶片的光谱必然也存在某种变异。这点和现在正在做的叶片光学特征的遗传解析问题不谋而合。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/mw690/6b84e15bly1gh3ia726kij21dm0i8wjp.jpg&#34; alt=&#34;linking spectra to functional and phylogenetic diversity&#34;&gt;&lt;/p&gt;
 </description>
     </item>
@@ -64,12 +63,10 @@
       <link>/post/hsi-and-its-potential-for-rapid-single-kernel-analysis/</link>
       <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
       <guid>/post/hsi-and-its-potential-for-rapid-single-kernel-analysis/</guid>
-      <description>&lt;p&gt;于老师推荐的一篇
-&lt;a href=&#34;https://doi.org/10.1080/05704928.2018.1425214&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reviewer&lt;/a&gt;，关于光谱相机的。里面重点介绍对谷物籽粒化学成分检测，并探讨应用于单籽粒检测上。&lt;/p&gt;
+      <description>&lt;p&gt;于老师推荐的一篇&lt;a href=&#34;https://doi.org/10.1080/05704928.2018.1425214&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reviewer&lt;/a&gt;，关于光谱相机的。里面重点介绍对谷物籽粒化学成分检测，并探讨应用于单籽粒检测上。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://tvax2.sinaimg.cn/mw690/6b84e15bly1gh1vbzqgdsj20t50lfwi6.jpg&#34; alt=&#34;HSI single kernel for chemical composition-Review&#34;&gt;
 以上展示的是作者推荐的一套流程，将光谱相机用于小麦籽粒化学成分分析。&lt;/p&gt;
-&lt;p&gt;这张图不禁让我想起Food Chemistry上的一篇文章，当时因为图中也有籽粒成分的图像而让我印象深刻。
-&lt;a href=&#34;http://dx.doi.org/10.1016/j.foodchem.2017.07.048&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章链接在此&lt;/a&gt;
+&lt;p&gt;这张图不禁让我想起Food Chemistry上的一篇文章，当时因为图中也有籽粒成分的图像而让我印象深刻。&lt;a href=&#34;http://dx.doi.org/10.1016/j.foodchem.2017.07.048&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;文章链接在此&lt;/a&gt;
 &lt;img src=&#34;https://tvax3.sinaimg.cn/mw690/6b84e15bly1gh1vbkka5gj20pa0obwif.jpg&#34; alt=&#34;HSI single kernel for chemical composition-food chem&#34;&gt;&lt;/p&gt;
 &lt;p&gt;因为刚好做过类似的研究，想着以后是否可以探索将此技术应用起来，尤其是单籽粒成分图像的分析上。甚至可以脑洞大开，分析叶片，籽粒内部各成分的空间差异。用于解释外在的处理效果。&lt;/p&gt;
 &lt;p&gt;顺便探讨下，光谱分析不能仅仅局限在二维的谱线数据，而应该拓展到三维空间，分析光谱图像上来了。&lt;/p&gt;
@@ -83,8 +80,7 @@
       <pubDate>Tue, 21 Jul 2020 00:00:00 +0000</pubDate>
       <guid>/post/%E8%AE%A4%E7%9F%A5%E5%81%8F%E5%B7%AE/</guid>
       <description>&lt;p&gt;最近的一些事情，让我想到人的认知偏差，之前看到的一张解释认知偏差的图。
-配图的
-&lt;a href=&#34;https://www.imtqy.com/dk-effect.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;原文在此&lt;/a&gt;&lt;/p&gt;
+配图的&lt;a href=&#34;https://www.imtqy.com/dk-effect.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;原文在此&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://tva1.sinaimg.cn/mw690/6b84e15bgy1ggyimf34s8j20zk0zk0up.jpg&#34; alt=&#34;dk-effect&#34;&gt;&lt;/p&gt;
 &lt;p&gt;有机会再把这个话题展开来讲。&lt;/p&gt;
 </description>
