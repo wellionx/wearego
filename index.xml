@@ -45,7 +45,7 @@
 &lt;ol style=&#34;list-style-type: decimal&#34;&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;cowplot&lt;/code&gt;包，用于组合图形和图片
 链接在此：&lt;a href=&#34;https://wilkelab.org/cowplot/articles/introduction.html&#34; class=&#34;uri&#34;&gt;https://wilkelab.org/cowplot/articles/introduction.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;code&gt;ggpub&lt;/code&gt;包，号称可以生成发表级别的图。简单易用，但是灵活性不足。数据探索可以考虑使用
+&lt;li&gt;&lt;p&gt;&lt;code&gt;ggpubr&lt;/code&gt;包，号称可以生成发表级别的图。简单易用，但是灵活性不足。数据探索可以考虑使用
 链接在此：&lt;a href=&#34;https://rpkgs.datanovia.com/ggpubr/index.html&#34; class=&#34;uri&#34;&gt;https://rpkgs.datanovia.com/ggpubr/index.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
