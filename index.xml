@@ -47,6 +47,16 @@
 &lt;p&gt;链接在此：&lt;a href=&#34;https://wilkelab.org/cowplot/articles/introduction.html&#34; class=&#34;uri&#34;&gt;https://wilkelab.org/cowplot/articles/introduction.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;ggpubr&lt;/code&gt;包，号称可以生成发表级别的图。简单易用，但是灵活性不足。数据探索可以考虑使用&lt;/p&gt;
 &lt;p&gt;链接在此：&lt;a href=&#34;https://rpkgs.datanovia.com/ggpubr/index.html&#34; class=&#34;uri&#34;&gt;https://rpkgs.datanovia.com/ggpubr/index.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;ggstatsplot&lt;/code&gt;包, 画出来的图既漂亮还带有统计参数。棒棒棒！！！
+&lt;a href=&#34;https://indrajeetpatil.github.io/ggstatsplot/&#34; class=&#34;uri&#34;&gt;https://indrajeetpatil.github.io/ggstatsplot/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;sf&lt;/code&gt;包, 画地图的包，兼容性好。做不规则多边形也很好。当年我用轮廓构建的小麦植株就是用这个包做成的。
+&lt;a href=&#34;https://r-spatial.github.io/sf/index.html&#34; class=&#34;uri&#34;&gt;https://r-spatial.github.io/sf/index.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;ggcor&lt;/code&gt;包，做相关性分析比较强大的包，简化了很多分析的门槛，输出相关性的矩阵也很方便。然而由于某些原因，作者删除了包。&lt;/p&gt;
+&lt;p&gt;备份版本可以在gitee上找到：&lt;a href=&#34;https://gitee.com/wellionx/ggcor&#34; class=&#34;uri&#34;&gt;https://gitee.com/wellionx/ggcor&lt;/a&gt;
+可以通过devtools安装使用。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;devtools::install_git(&amp;quot;https://gitee.com/wellionx/ggcor.git&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;ggvis&lt;/code&gt;包，可以画出很漂亮图形的R包
+&lt;a href=&#34;http://ggvis.rstudio.com/&#34; class=&#34;uri&#34;&gt;http://ggvis.rstudio.com/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;数据科学&#34; class=&#34;section level3&#34;&gt;
@@ -62,6 +72,8 @@
 &lt;p&gt;此外，还发现caret包能做&lt;a href=&#34;https://topepo.github.io/caret/recursive-feature-elimination.html&#34;&gt;Recursive Feature Elimination&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;统计学习即机器学习
 &lt;a href=&#34;https://daviddalpiaz.github.io/r4sl/index.html&#34;&gt;R for Statistical Learning&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;R可视化的网站。介绍了几个主流的R绘图包，并配有例子
+&lt;a href=&#34;https://ecodatasci-tlv.github.io/visualizations_in_r/&#34; class=&#34;uri&#34;&gt;https://ecodatasci-tlv.github.io/visualizations_in_r/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 </description>
