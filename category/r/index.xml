@@ -37,6 +37,25 @@
 &lt;pre&gt;&lt;code&gt;devtools::install_git(&amp;quot;https://gitee.com/wellionx/ggcor.git&amp;quot;)&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;code&gt;ggvis&lt;/code&gt;包，可以画出很漂亮图形的R包
 &lt;a href=&#34;http://ggvis.rstudio.com/&#34; class=&#34;uri&#34;&gt;http://ggvis.rstudio.com/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;endextend&lt;/code&gt;包，一个美化和拓展tree的包
+&lt;a href=&#34;http://talgalili.github.io/dendextend/articles/dendextend.html&#34; class=&#34;uri&#34;&gt;http://talgalili.github.io/dendextend/articles/dendextend.html&lt;/a&gt;
+做聚类分析，用于可视化的包，fviz_dend()函数在展示大型树的时候，加载过于漫长。于是搜索有没有更好的解决方法。终于找到了&lt;code&gt;dendextend&lt;/code&gt;这个包。而且竟然支持管道操作，真真对这个包一见钟情。&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;echarts4r&lt;/code&gt;包，echarts 4的R版本，能画很多交互的图
+&lt;a href=&#34;https://echarts4r.john-coene.com/articles/advanced.html&#34; class=&#34;uri&#34;&gt;https://echarts4r.john-coene.com/articles/advanced.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;recharts&lt;/code&gt;包，echarts 2的R版本, 谢益辉开发。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://madlogos.github.io/recharts/#-en&#34; class=&#34;uri&#34;&gt;http://madlogos.github.io/recharts/#-en&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;line chart详细说明
+&lt;a href=&#34;http://madlogos.github.io/recharts/Basic_Plots_03_Line.html#-en&#34; class=&#34;uri&#34;&gt;http://madlogos.github.io/recharts/Basic_Plots_03_Line.html#-en&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;echarter&lt;/code&gt;包，echarts 4的R版本, 最新开发。作者在开发版本的网页中也介绍了之前几个版本的echarts的R接口,都是挂在GitHub上的&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;cosname/recharts - ECharts4&lt;/li&gt;
+&lt;li&gt;JohnCoene/echarts4r - ECharts4&lt;/li&gt;
+&lt;li&gt;yihui/recharts - ECharts2&lt;/li&gt;
+&lt;li&gt;madlogos/recharts - ECharts2 forked from yihui/recharts&lt;/li&gt;
+&lt;li&gt;madlogos/recharts2 - ECharts3&lt;/li&gt;
+&lt;li&gt;ChanningWong/REcharts3 - ECharts3&lt;/li&gt;
+&lt;li&gt;XD-DENG/ECharts2Shiny - ECharts3&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;数据科学&#34; class=&#34;section level3&#34;&gt;
