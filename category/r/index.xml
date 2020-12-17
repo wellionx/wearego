@@ -13,6 +13,19 @@
     </image>
     
     <item>
+      <title>PCA analysis of reflectance spectra</title>
+      <link>/post/2020-12-17-pca-analysis-of-reflectance-spectra/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-12-17-pca-analysis-of-reflectance-spectra/</guid>
+      <description>
+
+
+&lt;p&gt;对于光谱这种高维数据，常常需要通过降维发现其内部的规律。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;index_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>show the hourly weather</title>
       <link>/post/2020-12-17-show-the-hourly-weather/</link>
       <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>

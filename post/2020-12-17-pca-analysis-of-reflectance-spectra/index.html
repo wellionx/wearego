@@ -34,10 +34,10 @@
   
     
   
-  <meta name="description" content="我来用R画小麦">
+  <meta name="description" content="光谱分析的降维思想">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/draw-wheat-chart-in-r/">
+  <link rel="alternate" hreflang="en-us" href="/post/2020-12-17-pca-analysis-of-reflectance-spectra/">
 
   
 
@@ -261,7 +261,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hu8fa43e4483d02e4bfdf294b3386ef244_148313_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu8fa43e4483d02e4bfdf294b3386ef244_148313_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/post/draw-wheat-chart-in-r/">
+  <link rel="canonical" href="/post/2020-12-17-pca-analysis-of-reflectance-spectra/">
 
   
   
@@ -277,15 +277,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Academic">
-  <meta property="og:url" content="/post/draw-wheat-chart-in-r/">
-  <meta property="og:title" content="Draw wheat chart in R | Academic">
-  <meta property="og:description" content="我来用R画小麦"><meta property="og:image" content="/images/icon_hu8fa43e4483d02e4bfdf294b3386ef244_148313_512x512_fill_lanczos_center_2.png">
+  <meta property="og:url" content="/post/2020-12-17-pca-analysis-of-reflectance-spectra/">
+  <meta property="og:title" content="PCA analysis of reflectance spectra | Academic">
+  <meta property="og:description" content="光谱分析的降维思想"><meta property="og:image" content="/images/icon_hu8fa43e4483d02e4bfdf294b3386ef244_148313_512x512_fill_lanczos_center_2.png">
   <meta property="twitter:image" content="/images/icon_hu8fa43e4483d02e4bfdf294b3386ef244_148313_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-07-04T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-12-17T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2020-07-04T17:31:07&#43;08:00">
+    <meta property="article:modified_time" content="2020-12-17T22:09:44&#43;08:00">
   
 
   
@@ -309,12 +309,12 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "/post/draw-wheat-chart-in-r/"
+    "@id": "/post/2020-12-17-pca-analysis-of-reflectance-spectra/"
   },
-  "headline": "Draw wheat chart in R",
+  "headline": "PCA analysis of reflectance spectra",
   
-  "datePublished": "2020-07-04T00:00:00Z",
-  "dateModified": "2020-07-04T17:31:07+08:00",
+  "datePublished": "2020-12-17T00:00:00Z",
+  "dateModified": "2020-12-17T22:09:44+08:00",
   
   "author": {
     "@type": "Person",
@@ -329,7 +329,7 @@
       "url": "/images/icon_hu8fa43e4483d02e4bfdf294b3386ef244_148313_192x192_fill_lanczos_center_2.png"
     }
   },
-  "description": "我来用R画小麦"
+  "description": "光谱分析的降维思想"
 }
 </script>
 
@@ -347,7 +347,7 @@
 
 
 
-  <title>Draw wheat chart in R | Academic</title>
+  <title>PCA analysis of reflectance spectra | Academic</title>
 
 </head>
 
@@ -655,7 +655,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>Draw wheat chart in R</h1>
+  <h1>PCA analysis of reflectance spectra</h1>
 
   
 
@@ -676,7 +676,7 @@
           Last updated on
       
     
-    Jul 4, 2020
+    Dec 17, 2020
   </span>
   
 
@@ -699,7 +699,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/category/%E6%95%99%E7%A8%8B/">教程</a>, <a href="/category/r/">R</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/category/r/">R</a></span>
   
 
 </div>
@@ -730,28 +730,8 @@
       
 
 
-<p><img src="/post/2020-07-04-draw-wheat-chart-in-r.en_files/wheatplots.jpg" /></p>
-<p>前几天，在微信公众号里看到有个R包（gganatogram) 可以画动物和植物的图形，但是里面的小麦不好看。于是把我用R画的小麦分享出来，比一比哪个更好看😜。</p>
-<p>话不多说，先上图。
-<img src="/post/2020-07-04-draw-wheat-chart-in-r.en_files/img1.png" /></p>
-<p>先说说为什么要画这么一个图。</p>
-<p>那是在我刚进课题组的时候，就了解到实验室有大量小麦的数据。而且是从叶片到茎秆再到穗和籽粒等等各种器官一应俱全。更让人惊喜的是这些数据时间跨度大。当时我就在想，用什么样的方式才能展示出来这么丰富的空间和时间变化呢？</p>
-<p>一次偶然的机会，我联想到地图，地图里面的各个区域由多边形组成，区域的数值变化可以通过填色来完成。眼尖的同学应该看出来了，里面正是我华北平原的吴桥实验站（手动笑脸）。</p>
-<p><img src="/post/2020-07-04-draw-wheat-chart-in-r.en_files/img2.png" /></p>
-<p>而我们一株小麦上的各个器官正好对应着地图上不同区域。利用小麦不同器官的轮廓图，勾勒出多边形，再把多边形组合，就形成一株完整的小麦。</p>
-<p>有了这个想法之后，我就开始实施。首先从网上找到一株小麦的矢量图（就是各器官能分开的图形），然后根据各部分的轮廓创建多边形。是的，图形数据化用到了一款开源软件，名为<a href="https://automeris.io/WebPlotDigitizer/">WebPlotDigitizer</a>。这款软件非常强大，可以提取图像或者图片中的坐标数据。这里特别提一句，小麦植株的比例做了一些微调，可能与真实的有点出入，但是不影响数据展示。还有一点，我们课题组专门研究地上部分的，暂时还没把根(器官)加进去，不过后期会考虑。</p>
-<p><img src="/post/2020-07-04-draw-wheat-chart-in-r.en_files/img3.png" /></p>
-<p><img src="/post/2020-07-04-draw-wheat-chart-in-r.en_files/img4.png" /></p>
-<p>多边形创建采用了专门处理gis数据的R包sf。</p>
-<p>最后的成品就是前面看到的这个样子了。每一个部分都可以根据自己的需求填上任意的颜色。而且颜色也可以根据需求自己选择，颜色的深浅代表指标的高低。</p>
-<p><img src="/post/2020-07-04-draw-wheat-chart-in-r.en_files/img5.png" /></p>
-<p><img src="/post/2020-07-04-draw-wheat-chart-in-r.en_files/figure-html/unnamed-chunk-1-1.png" width="672" />
-也可以给每个部分添加标签，放上对应的数据。这样看起来好是不是好很多。</p>
-<p><img src="/post/2020-07-04-draw-wheat-chart-in-r.en_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<p>再来一张动图看看。</p>
-<p><img src="/post/2020-07-04-draw-wheat-chart-in-r.en_files/mygif.gif" /></p>
-<p>好吧，最后公布一下那个R包里面的小麦。貌似也没那么难看 😄</p>
-<p><img src="/post/2020-07-04-draw-wheat-chart-in-r.en_files/wheatbygganotom.png" /></p>
+<p>对于光谱这种高维数据，常常需要通过降维发现其内部的规律。</p>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
 
     </div>
 
@@ -761,14 +741,6 @@
 
 
 
-
-<div class="article-tags">
-  
-  <a class="badge badge-light" href="/tag/plot/">plot</a>
-  
-  <a class="badge badge-light" href="/tag/academic/">Academic</a>
-  
-</div>
 
 
 
@@ -783,7 +755,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/draw-wheat-chart-in-r/&amp;text=Draw%20wheat%20chart%20in%20R" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=/post/2020-12-17-pca-analysis-of-reflectance-spectra/&amp;text=PCA%20analysis%20of%20reflectance%20spectra" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -796,7 +768,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/draw-wheat-chart-in-r/&amp;t=Draw%20wheat%20chart%20in%20R" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=/post/2020-12-17-pca-analysis-of-reflectance-spectra/&amp;t=PCA%20analysis%20of%20reflectance%20spectra" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -809,7 +781,7 @@
       
       
       <li>
-        <a href="mailto:?subject=Draw%20wheat%20chart%20in%20R&amp;body=/post/draw-wheat-chart-in-r/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=PCA%20analysis%20of%20reflectance%20spectra&amp;body=/post/2020-12-17-pca-analysis-of-reflectance-spectra/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -822,7 +794,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/draw-wheat-chart-in-r/&amp;title=Draw%20wheat%20chart%20in%20R" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=/post/2020-12-17-pca-analysis-of-reflectance-spectra/&amp;title=PCA%20analysis%20of%20reflectance%20spectra" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -835,7 +807,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=Draw%20wheat%20chart%20in%20R%20/post/draw-wheat-chart-in-r/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=PCA%20analysis%20of%20reflectance%20spectra%20/post/2020-12-17-pca-analysis-of-reflectance-spectra/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -848,7 +820,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/draw-wheat-chart-in-r/&amp;title=Draw%20wheat%20chart%20in%20R" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=/post/2020-12-17-pca-analysis-of-reflectance-spectra/&amp;title=PCA%20analysis%20of%20reflectance%20spectra" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -982,15 +954,15 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/post/show-the-local-weather/">Show the local weather</a></li>
-      
-      <li><a href="/post/2020-12-17-pca-analysis-of-reflectance-spectra/">PCA analysis of reflectance spectra</a></li>
-      
       <li><a href="/post/2020-12-17-visualization-of-weather-data/">Visualization of weather data</a></li>
       
       <li><a href="/post/2020-12-17-show-the-hourly-weather/">show the hourly weather</a></li>
       
       <li><a href="/post/2020-12-02-website-collection/">Website collection</a></li>
+      
+      <li><a href="/post/draw-wheat-chart-in-r/">Draw wheat chart in R</a></li>
+      
+      <li><a href="/post/show-the-local-weather/">Show the local weather</a></li>
       
     </ul>
   </div>
