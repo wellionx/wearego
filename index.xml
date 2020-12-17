@@ -41,7 +41,22 @@
 
 
 &lt;p&gt;对于光谱这种高维数据，常常需要通过降维发现其内部的规律。&lt;/p&gt;
+&lt;p&gt;首先看下原始光谱。从中仅仅能看出不同波段的变异信息，很难挖掘到更多与样品类别相关的特征。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;index_files/figure-html/unnamed-chunk-2-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;于是采用PCA进行降维，观察不同样品的差异。从下面的图中，似乎可以看出样品有成簇分布的可能。但是PCA降维是无法将分类信息展示出来。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;index_files/figure-html/unnamed-chunk-3-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;于是通过层次聚类，发现类别相关的特征。有意思的结果出来了。似乎能根据光谱特征将样品分为不同类别。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;index_files/figure-html/unnamed-chunk-4-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;从直觉上看，4个类别似乎还是有可能的。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot(dend)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;index_files/figure-html/unnamed-chunk-5-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;采用kmeans进行聚类，发现确实4个类别是比较好的。而且还能生成非常漂亮的聚类PCA。&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Gap statistic plot
+fviz_gap_stat(res.km$gap_stat)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;index_files/figure-html/unnamed-chunk-6-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;fviz_cluster(res.km, geom = &amp;quot;point&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;index_files/figure-html/unnamed-chunk-6-2.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;至此，光谱降维外加聚类的完整分析流程就结束了。下面就是需要根据样品的生物学特征来做解释了。比如4个类别刚好是质地不同的类型，那么解释起来就更有说服力了。&lt;/p&gt;
 </description>
     </item>
     
